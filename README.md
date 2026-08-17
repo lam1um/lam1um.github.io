@@ -13,4 +13,4 @@
 ## Контакты
 
 - GitHub: [@lam1um](https://github.com/lam1um)
-- Telegram: [@lam1um](https://t.me/lam1um)
+- Telegram: [@shtanin_13](https://t.me/shtanin_13)
