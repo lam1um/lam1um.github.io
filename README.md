@@ -1,30 +1,16 @@
-# Портфолио — сайт-визитка
+# Лам1ум
 
-Одностраничный сайт с проектами, стеком и контактами.
+Портфолио: Telegram-боты, мини-приложения и сайты.
 
-## Деплой на сервер
+**Сайт:** [lam1um.github.io](https://lam1um.github.io)
 
-Сайт доступен по адресу: **https://31-58-85-80.sslip.io/portfolio/**
+## Проекты
 
-После правок синхронизируй:
+- Корпоративные сайты и PWA
+- Telegram-боты с Web Apps
+- AI-интеграции и платежи (ЮKassa)
 
-```bash
-cp -r /root/portfolio/* /var/www/portfolio/
-```
+## Контакты
 
-
-```bash
-cd /root/portfolio
-python3 -m http.server 8080
-```
-
-Открой http://localhost:8080
-
-## Что настроить
-
-1. В `index.html` замени `YOUR_USERNAME` на свой Telegram и GitHub
-2. При желании — добавь имя в hero-секцию и favicon
-
-## GitHub
-
-Промпты для публикации проектов — в `GITHUB_PROMPTS.md`
+- GitHub: [@lam1um](https://github.com/lam1um)
+- Telegram: [@lam1um](https://t.me/lam1um)
