@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Лам1ум — разработка Telegram-ботов, мини-приложений и сайтов. Python, AI, Web Apps." />
+  <title>Лам1ум — Telegram-боты и веб</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500&family=Manrope:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body>
+  <header class="header" id="header">
+    <a class="header__logo" href="#top">Лам<span>1</span>ум</a>
+    <nav class="header__nav" aria-label="Навигация">
+      <a href="#projects">Проекты</a>
+      <a href="#stack">Стек</a>
+      <a href="#contact">Контакты</a>
+    </nav>
+    <button class="burger" id="burger" aria-label="Меню" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+  </header>
+
+  <div class="mobile-nav" id="mobileNav" hidden>
+    <a href="#projects">Проекты</a>
+    <a href="#stack">Стек</a>
+    <a href="#contact">Контакты</a>
+  </div>
+
+  <main id="top">
+    <section class="hero">
+      <p class="hero__label">python · telegram · cursor</p>
+      <h1 class="hero__title">Лам1ум</h1>
+      <p class="hero__subtitle">Telegram-боты, мини-приложения и сайты</p>
+      <p class="hero__desc">
+        Делаю продукты под ключ — от идеи до деплоя на сервер.
+        AI, Web Apps, платежи, групповые механики.
+      </p>
+      <div class="hero__actions">
+        <a class="btn btn--primary" href="#projects">Смотреть проекты</a>
+        <a class="btn btn--ghost" href="https://github.com/lam1um" target="_blank" rel="noopener">GitHub</a>
+      </div>
+      <div class="hero__stats">
+        <div class="stat"><strong>10+</strong> проектов</div>
+        <div class="stat"><strong>7</strong> ботов</div>
+        <div class="stat"><strong>3</strong> web apps</div>
+      </div>
+    </section>
+
+    <section class="section" id="projects">
+      <div class="section__head">
+        <h2>Проекты</h2>
+        <p>Избранные работы — боты, сайты и мини-приложения</p>
+      </div>
+
+      <ul class="project-list">
+        <li class="project project--featured">
+          <div class="project__head">
+            <h3>МЕТПРОФ</h3>
+            <span class="project__meta">сайт · коммерция</span>
+          </div>
+          <p>Корпоративный сайт строительной компании: аренда спецтехники, каталог, форма заявки, PWA-админка с календарём.</p>
+          <p class="project__stack">Flask · PWA · Vanilla JS</p>
+        </li>
+
+        <li class="project">
+          <div class="project__head">
+            <h3>HabitCircle</h3>
+            <span class="project__meta">бот · web app</span>
+          </div>
+          <p>Личный трекер привычек и групповые задачи. Назначение дел по @username, роли, календарь, серии.</p>
+          <p class="project__stack">aiogram 3 · SQLite · Mini App</p>
+        </li>
+
+        <li class="project">
+          <div class="project__head">
+            <h3>Raschetka</h3>
+            <span class="project__meta">бот · web app</span>
+          </div>
+          <p>Делёжка счетов и книга долгов. Ручной ввод и AI-парсинг чеков, профили, Web App.</p>
+          <p class="project__stack">aiogram 3 · OpenAI · Web App</p>
+        </li>
+
+        <li class="project">
+          <div class="project__head">
+            <h3>Голос Путника</h3>
+            <span class="project__meta">бот · платежи</span>
+          </div>
+          <p>Таро-бот с авторской колодой. Первая карта бесплатно, подписка через ЮKassa, webhook для оплат.</p>
+          <p class="project__stack">aiogram 3 · ЮKassa · aiohttp</p>
+        </li>
+
+        <li class="project">
+          <div class="project__head">
+            <h3>AI Style Bot</h3>
+            <span class="project__meta">бот · ai</span>
+          </div>
+          <p>Перерисовка фото в разные стили через FLUX Kontext. Админ-панель, кошелёк, два бота.</p>
+          <p class="project__stack">aiogram 3 · fal.ai · FLUX</p>
+        </li>
+
+        <li class="project">
+          <div class="project__head">
+            <h3>Дополни фразу</h3>
+            <span class="project__meta">бот · игра</span>
+          </div>
+          <p>Групповая игра: участники дополняют фразы реплаями, голосуют в опросах, копят очки.</p>
+          <p class="project__stack">aiogram 3 · опросы Telegram · FSM</p>
+        </li>
+
+        <li class="project">
+          <div class="project__head">
+            <h3>Danetka AI</h3>
+            <span class="project__meta">бот · ai</span>
+          </div>
+          <p>Игра «да-нет» с AI: загадки, подсказки, каталог вопросов, прогресс пользователей.</p>
+          <p class="project__stack">aiogram 3 · OpenAI · SQLAlchemy</p>
+        </li>
+      </ul>
+
+      <details class="more">
+        <summary>Ещё проекты</summary>
+        <ul class="more__list">
+          <li><strong>Магазин «Степа Жидов»</strong> — Telegram-магазин с каталогом и заказами</li>
+          <li><strong>Veg Shop</strong> — бот для заказа овощей</li>
+          <li><strong>Strawberry Bot</strong> — бот для продажи клубники</li>
+          <li><strong>Tosno Vegetables</strong> — FastAPI-сервис, tosnoveg.ru</li>
+        </ul>
+      </details>
+    </section>
+
+    <section class="section" id="stack">
+      <div class="section__head">
+        <h2>Стек</h2>
+        <p>Технологии, с которыми работаю</p>
+      </div>
+      <div class="stack-grid">
+        <div class="stack-item">
+          <h4>backend</h4>
+          <p>Python, aiogram 3, Flask, FastAPI, SQLAlchemy</p>
+        </div>
+        <div class="stack-item">
+          <h4>ai</h4>
+          <p>OpenAI, fal.ai, FLUX Kontext</p>
+        </div>
+        <div class="stack-item">
+          <h4>telegram</h4>
+          <p>Mini Apps, Web Apps, опросы, FSM</p>
+        </div>
+        <div class="stack-item">
+          <h4>платежи</h4>
+          <p>ЮKassa, подписки, webhooks</p>
+        </div>
+        <div class="stack-item">
+          <h4>frontend</h4>
+          <p>HTML, CSS, JS, PWA</p>
+        </div>
+        <div class="stack-item">
+          <h4>деплой</h4>
+          <p>systemd, nginx, Linux-сервер</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="section__head">
+        <h2>Как работаю</h2>
+      </div>
+      <ol class="process">
+        <li data-step="01">
+          <h4>Идея и прототип</h4>
+          <p>Обсуждаем задачу, выбираем механику, собираю MVP.</p>
+        </li>
+        <li data-step="02">
+          <h4>Разработка</h4>
+          <p>Бот, Web App или сайт — с базой, админкой и деплоем.</p>
+        </li>
+        <li data-step="03">
+          <h4>Запуск</h4>
+          <p>systemd, HTTPS, документация. Передаю готовый проект.</p>
+        </li>
+      </ol>
+    </section>
+
+    <section class="section" id="contact">
+      <div class="contact-box">
+        <h2>Контакты</h2>
+        <p>Напиши — обсудим бота, сайт или доработку существующего проекта.</p>
+        <div class="contact-links">
+          <a class="contact-link" href="https://github.com/lam1um" target="_blank" rel="noopener">
+            <span class="contact-link__icon">gh</span> github.com/lam1um
+          </a>
+          <a class="contact-link" href="https://t.me/lam1um" target="_blank" rel="noopener">
+            <span class="contact-link__icon">tg</span> @lam1um
+          </a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <p><a href="https://github.com/lam1um">lam1um</a> · 2026</p>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
