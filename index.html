@@ -3,19 +3,25 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="Лам1ум — Telegram-боты, мини-приложения и сайты. Python, AI, Web Apps, деплой на сервер." />
-  <meta name="theme-color" content="#100e0c" />
-  <title>Лам1ум — Telegram-боты и веб</title>
+  <meta name="description" content="lam1um — Telegram-боты, мини-приложения и сайты. Python, AI, Web Apps." />
+  <meta name="theme-color" content="#05080f" />
+  <title>lam1um — Telegram-боты и веб</title>
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,700;12..96,800&family=Source+Sans+3:ital,wght@0,400;0,500;0,600;1,400&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500&family=Public+Sans:ital,wght@0,400;0,500;0,600;1,400&family=Unbounded:wght@500;700;800&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="css/styles.css" />
 </head>
 <body>
+  <div class="atmosphere" aria-hidden="true">
+    <div class="atmosphere__grid"></div>
+    <div class="atmosphere__orb atmosphere__orb--a"></div>
+    <div class="atmosphere__orb atmosphere__orb--b"></div>
+  </div>
+
   <a class="skip" href="#projects">К проектам</a>
 
   <header class="header" id="header">
-    <a class="header__logo" href="#top">Лам<span>1</span>ум</a>
+    <a class="header__logo" href="#top">lam<span>1</span>um</a>
     <nav class="header__nav" aria-label="Навигация">
       <a href="#projects">Проекты</a>
       <a href="#stack">Стек</a>
@@ -34,11 +40,11 @@
 
   <main id="top">
     <section class="hero" aria-labelledby="hero-brand">
-      <div class="hero__plane" aria-hidden="true">
-        <span class="hero__digit">1</span>
+      <div class="hero__mark" aria-hidden="true">
+        <span class="hero__mark-text">lam1um</span>
       </div>
       <div class="hero__inner">
-        <p class="hero__brand" id="hero-brand">Лам<span>1</span>ум</p>
+        <p class="hero__brand" id="hero-brand">lam<span>1</span>um</p>
         <h1 class="hero__title">Telegram-боты и сайты под ключ</h1>
         <p class="hero__lead">
           От механики до systemd на сервере: боты, Web Apps, платежи и AI.
@@ -47,6 +53,12 @@
           <a class="btn btn--primary" href="https://t.me/shtanin_13" target="_blank" rel="noopener">Написать в Telegram</a>
           <a class="btn btn--ghost" href="#projects">Смотреть проекты</a>
         </div>
+      </div>
+      <div class="hero__rail" aria-hidden="true">
+        <span>python</span>
+        <span>telegram</span>
+        <span>ai</span>
+        <span>deploy</span>
       </div>
     </section>
 
@@ -58,66 +70,73 @@
 
       <ul class="work-log">
         <li class="work work--lead reveal">
-          <div class="work__meta">
+          <span class="work__index" aria-hidden="true">01</span>
+          <div class="work__body">
             <span class="work__kind">сайт · коммерция</span>
+            <h3>МЕТПРОФ</h3>
+            <p>Корпоративный сайт строительной компании: аренда спецтехники, каталог, форма заявки, PWA-админка с календарём.</p>
+            <p class="work__stack">Flask · PWA · Vanilla JS</p>
           </div>
-          <h3>МЕТПРОФ</h3>
-          <p>Корпоративный сайт строительной компании: аренда спецтехники, каталог, форма заявки, PWA-админка с календарём.</p>
-          <p class="work__stack">Flask · PWA · Vanilla JS</p>
         </li>
 
         <li class="work reveal">
-          <div class="work__meta">
+          <span class="work__index" aria-hidden="true">02</span>
+          <div class="work__body">
             <span class="work__kind">бот · web app</span>
+            <h3>HabitCircle</h3>
+            <p>Трекер привычек и групповые задачи. Назначение дел по @username, роли, календарь, серии.</p>
+            <p class="work__stack">aiogram 3 · SQLite · Mini App</p>
           </div>
-          <h3>HabitCircle</h3>
-          <p>Трекер привычек и групповые задачи. Назначение дел по @username, роли, календарь, серии.</p>
-          <p class="work__stack">aiogram 3 · SQLite · Mini App</p>
         </li>
 
         <li class="work reveal">
-          <div class="work__meta">
+          <span class="work__index" aria-hidden="true">03</span>
+          <div class="work__body">
             <span class="work__kind">бот · web app</span>
+            <h3>Raschetka</h3>
+            <p>Делёжка счетов и книга долгов. Ручной ввод и AI-парсинг чеков, профили, Web App.</p>
+            <p class="work__stack">aiogram 3 · OpenAI · Web App</p>
           </div>
-          <h3>Raschetka</h3>
-          <p>Делёжка счетов и книга долгов. Ручной ввод и AI-парсинг чеков, профили, Web App.</p>
-          <p class="work__stack">aiogram 3 · OpenAI · Web App</p>
         </li>
 
         <li class="work reveal">
-          <div class="work__meta">
+          <span class="work__index" aria-hidden="true">04</span>
+          <div class="work__body">
             <span class="work__kind">бот · платежи</span>
+            <h3>Голос Путника</h3>
+            <p>Таро-бот с авторской колодой. Первая карта бесплатно, подписка через ЮKassa, webhook для оплат.</p>
+            <p class="work__stack">aiogram 3 · ЮKassa · aiohttp</p>
           </div>
-          <h3>Голос Путника</h3>
-          <p>Таро-бот с авторской колодой. Первая карта бесплатно, подписка через ЮKassa, webhook для оплат.</p>
-          <p class="work__stack">aiogram 3 · ЮKassa · aiohttp</p>
         </li>
 
         <li class="work reveal">
-          <div class="work__meta">
+          <span class="work__index" aria-hidden="true">05</span>
+          <div class="work__body">
             <span class="work__kind">бот · ai</span>
+            <h3>AI Style Bot</h3>
+            <p>Перерисовка фото в разные стили через FLUX Kontext. Админ-панель, кошелёк, два бота.</p>
+            <p class="work__stack">aiogram 3 · fal.ai · FLUX</p>
           </div>
-          <h3>AI Style Bot</h3>
-          <p>Перерисовка фото в разные стили через FLUX Kontext. Админ-панель, кошелёк, два бота.</p>
-          <p class="work__stack">aiogram 3 · fal.ai · FLUX</p>
         </li>
 
         <li class="work reveal">
-          <div class="work__meta">
+          <span class="work__index" aria-hidden="true">06</span>
+          <div class="work__body">
             <span class="work__kind">бот · игра</span>
+            <h3>Дополни фразу</h3>
+            <p>Групповая игра: участники дополняют фразы реплаями, голосуют в опросах, копят очки.</p>
+            <p class="work__stack">aiogram 3 · опросы Telegram · FSM</p>
           </div>
-          <h3>Дополни фразу</h3>
-          <p>Групповая игра: участники дополняют фразы реплаями, голосуют в опросах, копят очки.</p>
-          <p class="work__stack">aiogram 3 · опросы Telegram · FSM</p>
         </li>
 
         <li class="work reveal">
-          <div class="work__meta">
+          <span class="work__index" aria-hidden="true">07</span>
+          <div class="work__body">
             <span class="work__kind">бот · ai</span>
+            <h3>Danetka AI</h3>
+            <p>Игра «да-нет» с AI: загадки, подсказки, каталог вопросов, прогресс пользователей.</p>
+            <p class="work__stack">aiogram 3 · OpenAI · SQLAlchemy</p>
           </div>
-          <h3>Danetka AI</h3>
-          <p>Игра «да-нет» с AI: загадки, подсказки, каталог вопросов, прогресс пользователей.</p>
-          <p class="work__stack">aiogram 3 · OpenAI · SQLAlchemy</p>
         </li>
       </ul>
 
@@ -191,7 +210,7 @@
         <h2>Напиши — обсудим задачу</h2>
         <p>Бот, сайт или доработка существующего проекта.</p>
         <div class="contact__links">
-          <a class="btn btn--primary" href="https://t.me/shtanin_13" target="_blank" rel="noopener">@shtanin_13</a>
+          <a class="btn btn--primary" href="https://t.me/shtanin_13" target="_blank" rel="noopener">Telegram</a>
           <a class="btn btn--ghost" href="https://github.com/lam1um" target="_blank" rel="noopener">github.com/lam1um</a>
         </div>
       </div>

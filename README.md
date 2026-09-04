@@ -1,21 +1,13 @@
-# Лам1ум
+# lam1um
 
 Портфолио: Telegram-боты, мини-приложения и сайты.
 
-**Сайт:** [lam1um.github.io](https://lam1um.github.io) · сервер: [31-58-85-80.sslip.io/portfolio/](https://31-58-85-80.sslip.io/portfolio/)
+**Сайт:** [lam1um.github.io](https://lam1um.github.io)
 
-## Запуск локально
+## Локально
 
 ```bash
-# из /root/portfolio
 python3 -m http.server 8765
-# → http://127.0.0.1:8765/
-```
-
-## Деплой на сервер
-
-```bash
-cp -r /root/portfolio/index.html /root/portfolio/css /root/portfolio/js /root/portfolio/README.md /var/www/portfolio/
 ```
 
 ## Контакты
