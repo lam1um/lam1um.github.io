@@ -470,6 +470,16 @@ main { position: relative; z-index: 1; }
   max-width: 58ch;
 }
 
+.work p + p { margin-top: 0.55rem; }
+
+.work p a {
+  color: var(--blue-hot);
+  text-decoration: underline;
+  text-underline-offset: 0.15em;
+}
+
+.work p a:hover { color: var(--ink); }
+
 .work__stack {
   font-family: var(--mono);
   font-size: 0.76rem;
